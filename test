@@ -14,44 +14,137 @@
 
 
 }
-#date{
-    font-size:large;
-}
-body{
-    background-color: aliceblue;
-}
-    </style>
-</head>
-<body>
-    <div id="lbl"></div>
-</body>
-
-<script>
-    var weekday = new Array(7);
-    weekday[0] = "Sunday";
-    weekday[1] = "Monday";
-    weekday[2] = "Tuesday";
-    weekday[3] = "Wednesday";
-    weekday[4] = "Thursday";
-    weekday[5] = "Friday";
-    weekday[6] = "Saturday";
-
-    
-    var today = new Date();
-    var hrs = today.getHours();
-    var dayOfWeek = weekday[today.getDay()];
-    var date = dayOfWeek+" " + today.getDate() + "/" +(today.getMonth()+1) +'/'+today.getFullYear()  ;
-
-    var greet;
-
-    if (hrs < 12)
-        greet = 'Good Morning  ';
-    else if (hrs >= 12 && hrs <= 17)
-        greet = 'Good Afternoon ';
-    else if (hrs >= 17 && hrs <= 24)
-        greet = 'Good Evening  ';
-
-    document.getElementById('lbl').innerHTML =
-        greet+=`<div id="date"> It's ${date}</div>`;
-</script> 
+<table border="1" cellpadding="0" cellspacing="0" dir="ltr" style="table-layout:fixed;font-size:10pt;font-family:Arial;width:0px;border-collapse:collapse;border:none;"><colgroup><col width="45"><col width="93"><col width="312"><col width="74"><col width="93"><col width="340"><col width="56"></colgroup><tbody><tr style="height:21px;"><td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;background-color:rgb(201,218,248);font-weight:bold;text-align:center;">Week</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;background-color:rgb(201,218,248);font-weight:bold;text-align:center;">Mon</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;background-color:rgb(201,218,248);font-weight:bold;">Mon - live lecture (รวมทุก sections)</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;background-color:rgb(201,218,248);font-weight:bold;text-align:center;">Mon - Instructor</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;background-color:rgb(201,218,248);font-weight:bold;text-align:center;">Wed</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;background-color:rgb(201,218,248);font-weight:bold;text-align:center;">Wed - live recap session (3 sections in parallel)</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;background-color:rgb(201,218,248);font-weight:bold;text-align:center;">HW</td>
+		</tr><tr style="height:21px;"><td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;text-align:center;">1</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(39,78,19);text-align:center;">10-Jan-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Intro, definition of linear equations, elementary row operations, Echelon form, Gaussian-Jordan elimination</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(11,128,67);text-align:center;">JSS</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(204,0,0);text-align:center;">12-Jan-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Recap and exercises on solving linear equations</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;">&nbsp;</td>
+		</tr><tr style="height:21px;"><td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;text-align:center;">2</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(39,78,19);text-align:center;">17-Jan-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Reviews on vectors and matrices, matrix operations, Definition of matrix inverse, Elementary matrices</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(11,128,67);text-align:center;">JSS</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(204,0,0);text-align:center;">19-Jan-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Recap and exercises on matrix inverse and elementary matrices; Theorem of invertible matrices; Determinants and properties under elementary row operations</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;">1</td>
+		</tr><tr style="height:21px;"><td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;text-align:center;">3</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(39,78,19);text-align:center;">24-Jan-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Definition of eigenvalues and eigenvectors, Facts about eigenvalues, eigenvalues of special matrices, matrix powers</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(11,128,67);text-align:center;">JSS</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(204,0,0);text-align:center;">26-Jan-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Recap and exercies on eigenvalues; similarity transform diagonalization</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;">&nbsp;</td>
+		</tr><tr style="height:21px;"><td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;text-align:center;">4</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(39,78,19);text-align:center;">31-Jan-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Diagonalizable matrices, Distinct eigenvalues, matrix polynomial, diagonalization of matrix polynomial</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(11,128,67);text-align:center;">JSS</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(204,0,0);text-align:center;">2-Feb-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Recap on diagonalizable matrices; Power series of matrices, matrix exponential, eigenvalues of matrix exponential</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;">2</td>
+		</tr><tr style="height:21px;"><td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;text-align:center;">5</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(39,78,19);text-align:center;">7-Feb-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Computing e^{At} via diagonalzation; Solving ODE and difference equation using diagonalization</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(11,128,67);text-align:center;">JSS</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(204,0,0);text-align:center;">9-Feb-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Recap on solving ODE using diagonalization</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;">&nbsp;</td>
+		</tr><tr style="height:21px;"><td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;text-align:center;">6</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(39,78,19);text-align:center;">14-Feb-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">vector space; linear independence; basis and dimension</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(197,57,41);text-align:center;">NTS</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(204,0,0);text-align:center;">16-Feb-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Recap and exercises on basis and dimension; nullspace and range of a matrix</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;">3</td>
+		</tr><tr style="height:21px;"><td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;text-align:center;">7</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(39,78,19);text-align:center;">21-Feb-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">nullspace and range of a matrix; bases for range and nullspace of A; Rank-nullity theorem</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(197,57,41);text-align:center;">NTS</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(204,0,0);text-align:center;">23-Feb-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Recap on nullspace and range of a matrix</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;">&nbsp;</td>
+		</tr><tr style="height:21px;"><td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;text-align:center;">8</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(39,78,19);text-align:center;">28-Feb-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Definition of linear transformation, matrix transformation, kernel and range of linear transformation</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(197,57,41);text-align:center;">NTS</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(204,0,0);text-align:center;">2-Mar-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Recap on kernel and range of linear transformation</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;">&nbsp;</td>
+		</tr><tr style="height:21px;"><td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;text-align:center;">9</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(39,78,19);text-align:center;">7-Mar-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:bottom;background-color:rgb(221,126,107);font-weight:bold;">Midterm exam (13:00-16:00)</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">&nbsp;</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(204,0,0);text-align:center;">9-Mar-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;background-color:rgb(255,242,204);">no class (midterm week)</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;">&nbsp;</td>
+		</tr><tr style="height:21px;"><td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;text-align:center;">10</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(39,78,19);text-align:center;">14-Mar-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">one-to-one and onto transformation, Isomorphism</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(197,57,41);text-align:center;">NTS</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(204,0,0);text-align:center;">16-Mar-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">composite transformation, inverse transformation</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;">4</td>
+		</tr><tr style="height:21px;"><td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;text-align:center;">11</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(39,78,19);text-align:center;">21-Mar-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Review on complex numbers, argument, roots of complex number</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(197,57,41);text-align:center;">NTS</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(204,0,0);text-align:center;">23-Mar-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Continuity, derivatives</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;">&nbsp;</td>
+		</tr><tr style="height:21px;"><td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;text-align:center;">12</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(39,78,19);text-align:center;">28-Mar-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Analytic functions, Cauchy-Riemann equations</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(240,147,0);text-align:center;">SAR</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(204,0,0);text-align:center;">30-Mar-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Elementary functions: exponential, logarithmic, complex exponents</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;">5</td>
+		</tr><tr style="height:21px;"><td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;text-align:center;">13</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(39,78,19);text-align:center;">4-Apr-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Definite of line integrals, contour integrals, Cauchy's Integral Theorem</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(240,147,0);text-align:center;">SAR</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(204,0,0);text-align:center;">6-Apr-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;background-color:rgb(255,242,204);">no class (Songkran holiday)</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;">&nbsp;</td>
+		</tr><tr style="height:21px;"><td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;text-align:center;">14</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(39,78,19);text-align:center;">11-Apr-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Limit and convergence, Taylor series, Maclaurin series</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(240,147,0);text-align:center;">SAR</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(204,0,0);text-align:center;">13-Apr-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;background-color:rgb(255,242,204);">no class (Songkran holiday)</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;">&nbsp;</td>
+		</tr><tr style="height:21px;"><td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;text-align:center;">15</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(39,78,19);text-align:center;">18-Apr-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Laurent Series; Residue Theorem</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(240,147,0);text-align:center;">SAR</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(204,0,0);text-align:center;">20-Apr-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Definition of residue, Cauchy's residue theorem, Types of isolated singular points</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;">6</td>
+		</tr><tr style="height:21px;"><td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;text-align:center;">16</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(39,78,19);text-align:center;">25-Apr-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Application of residue theorem: improper integrals from Fourier series</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(240,147,0);text-align:center;">SAR</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(204,0,0);text-align:center;">27-Apr-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Recap and exercises</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;">&nbsp;</td>
+		</tr><tr style="height:21px;"><td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;text-align:center;">17</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(39,78,19);text-align:center;">2-May-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:bottom;font-family:Roboto;">Application of residue theorem : inversion of Laplace transforms</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(240,147,0);text-align:center;">SAR</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(204,0,0);text-align:center;">4-May-2022</td>
+			<td style="border:1px solid rgb(204,204,204);padding:2px 3px;vertical-align:top;">Recap and exercises</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;">&nbsp;</td>
+		</tr><tr style="height:21px;"><td style="border-width:1px;border-style:solid;color:rgb(0,0,0);padding:2px 3px;vertical-align:top;text-align:center;">18</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(39,78,19);text-align:center;">9-May-2022</td>
+			<td style="border-width:1px;border-style:solid;color:rgb(0,0,0);padding:2px 3px;vertical-align:top;background-color:rgb(255,242,204);">no class (final week)</td>
+			<td style="border-width:1px;border-style:solid;color:rgb(0,0,0);padding:2px 3px;vertical-align:top;">&nbsp;</td>
+			<td style="border-width:1px;border-style:solid;padding:2px 3px;vertical-align:top;font-weight:bold;color:rgb(204,0,0);text-align:center;">11-May-2022</td>
+			<td style="border-width:1px;border-style:solid;color:rgb(0,0,0);padding:2px 3px;vertical-align:top;background-color:rgb(221,126,107);font-weight:bold;">Final examination (13:00-16:00)</td>
+		</tr></tbody></table>
 </html>
